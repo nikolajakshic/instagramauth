@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="InstagramAuthTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#f44336</item>
+        <item name="colorPrimaryDark">#d32f2f</item>
+        <item name="colorAccent">#64b5f6</item>
+    </style>
+</resources>

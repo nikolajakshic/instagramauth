@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InstagramAuth">
+        <attr name="instagram_auth_title" format="reference|string" />
+    </declare-styleable>
+</resources>
