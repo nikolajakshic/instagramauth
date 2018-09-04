@@ -2,6 +2,8 @@
 
 An Android library that makes it easy to authenticate your app users with Instagram.
 
+[![](https://jitpack.io/v/nikolajakshic/instagramauth.svg)](https://jitpack.io/#nikolajakshic/instagramauth)
+
 ## Download
 
 In your project's top-level `build.gradle` file, ensure that JitPack's Maven repository is included:
