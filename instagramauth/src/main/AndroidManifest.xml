@@ -8,6 +8,10 @@
             android:name=".InstagramLoginActivity"
             android:configChanges="orientation|screenSize"
             android:theme="@style/InstagramAuthTheme" />
+        <provider
+            android:name=".InstagramAuthInitProvider"
+            android:authorities="${applicationId}.instagramauthinitprovider"
+            android:exported="false" />
     </application>
 
 </manifest>
