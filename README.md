@@ -20,7 +20,7 @@ Then, in your app-level `build.gradle` file, declare `InstagramAuth` as a depend
 
 ```groovy
 dependencies {
-    implementation 'com.github.nikolajakshic:instagramauth:1.0.0'
+    implementation 'com.github.nikolajakshic:instagramauth:1.0.1'
 }
 ```
 
@@ -40,19 +40,6 @@ Add `CLIENT_ID` and `REDIRECT_URI` to your `AndroidManifest.xml` file:
             android:value="YOUR_REDIRECT_URI"/>
     </application>
 </manifest>
-```
-
-Initialize the library by calling `InstagramAuth.initialize()` from `onCreate` in `Application` or `Activity`/`Fragment`:
-
-```java
-public class MyApp extends Application {
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        InstagramAuth.initialize(this);
-    }
-}
 ```
 
 Call `AuthManager.getInstance().login()` to launch  an `Activity` that will, using `WebView`, prompt the User
