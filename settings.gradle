@@ -1,1 +1,1 @@
-include ':instagramauth'
+include ':instagramauth', ':sample'

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sample</string>
+
+    <string name="user_id">ID: %1$s</string>
+    <string name="user_name">Name: %1$s</string>
+    <string name="user_full_name">Full name: %1$s</string>
+</resources>
