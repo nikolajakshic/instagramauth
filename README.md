@@ -20,7 +20,7 @@ Then, in your app-level `build.gradle` file, declare `InstagramAuth` as a depend
 
 ```groovy
 dependencies {
-    implementation 'com.github.nikolajakshic:instagramauth:1.0.2'
+    implementation 'com.github.nikolajakshic:instagramauth:1.1.0'
 }
 ```
 

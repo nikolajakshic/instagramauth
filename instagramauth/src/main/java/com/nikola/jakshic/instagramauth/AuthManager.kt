@@ -3,7 +3,7 @@ package com.nikola.jakshic.instagramauth
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.webkit.CookieManager
 
 class AuthManager internal constructor(private val service: InstagramService, private val accessToken: AccessToken, private val appInfo: AppInfo) {
