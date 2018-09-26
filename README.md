@@ -24,6 +24,8 @@ dependencies {
 }
 ```
 
+If you are not using AndroidX, replace `1.1.0` with `1.0.2`.
+
 ## Usage
 
 Add `CLIENT_ID` and `REDIRECT_URI` to your `AndroidManifest.xml` file:
