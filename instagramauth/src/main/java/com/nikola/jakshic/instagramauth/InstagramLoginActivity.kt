@@ -46,6 +46,7 @@ internal class InstagramLoginActivity : AppCompatActivity() {
         webView.webViewClient = InstagramWebViewClient(loginCallback, pageCallback)
 
         webView.settings.javaScriptEnabled = true
+        webView.settings.domStorageEnabled = true
 
         val uri = buildUri()
 
