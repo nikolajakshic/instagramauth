@@ -7,10 +7,11 @@ import android.content.Intent
 import android.content.res.TypedArray
 import android.net.Uri
 import android.os.Bundle
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import androidx.appcompat.app.AppCompatActivity
+import android.view.MenuItem
 import android.view.View
 import android.webkit.WebView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 
 @SuppressLint("SetJavaScriptEnabled")
 internal class InstagramLoginActivity : AppCompatActivity() {
@@ -26,6 +27,8 @@ internal class InstagramLoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         swipeRefresh = SwipeRefreshLayout(this)
         webView = WebView(this)
@@ -56,6 +59,16 @@ internal class InstagramLoginActivity : AppCompatActivity() {
     override fun onBackPressed() {
         if (webView.canGoBack()) webView.goBack()
         else super.onBackPressed()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        return when (item?.itemId) {
+            android.R.id.home -> {
+                finish()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     private val pageCallback = object : InstagramWebViewClient.PageCallback {
