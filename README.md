@@ -1,3 +1,7 @@
+# DEPRECATED
+
+To authenticate your app users please use the official [Facebook Login](https://developers.facebook.com/docs/facebook-login/).
+
 # InstagramAuth
 
 An Android library that makes it easy to authenticate your app users with Instagram.
